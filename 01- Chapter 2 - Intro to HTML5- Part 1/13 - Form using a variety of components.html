@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <meta charset="utf-8">
+        <title>Big Form</title>
+    </body>
+
+    <body>
+        <h1>Feedback Form</h1>
+        
+        <p>Please fill out this form to help us improve this legecy site</p>
+
+        <form method="POST" action="www.google.com">
+
+            <input type="hidden" name="recipient"
+                value="eng.ibrahim222@gmail.com">
+            <input type="hidden" name="subject"
+                value="Feedback form">
+            <input type="hidden" name="redirect"
+                value="06 - Images as link anchors.html">
+
+            <p>
+                <label>Name:
+                    <input name="name" type="text" size="25">
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Comments:<br>
+                    <textarea name="comments" rows="4" cols="36"
+                    aria-valuetext="Enter Comments here">
+                        
+                    </textarea>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Email Address: <input name="email" type="email">
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <strong>Things you liked:<br></strong>
+                </label>Site Design: <input name="thingsLiked" type="checkbox" value="Site Design"></labels>
+                </label>Links: <input name="thingsLiked" type="checkbox" value="Links"></labels>
+                </label>Ease of use: <input name="thingsLiked" type="checkbox" value="Ease of use"></labels>
+                </label>Images: <input name="thingsLiked" type="checkbox" value="Images"></labels>
+                </label>Source Code: <input name="thingsLiked" type="checkbox" value="Source Code"></labels>
+                </label>Useless: <input name="thingsLiked" type="checkbox" value="Useless"></labels>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <strong>How did you get to our site?:<br></strong>
+                    <label>Search Engine
+                        <input name="site" type="radio" value="Search Engine">
+                    </label>
+                    <label>Links from another site
+                        <input name="site" type="radio" value="Links from another site">
+                    </label>
+                    <label>BlaBlaBla
+                        <input name="site" type="radio" value="BlaBlaBla">
+                    </label>
+                    <label>Reference in a book
+                        <input name="site" type="radio" value="Reference in a book">
+                    </label>
+                    <label>Other
+                        <input name="site" type="radio" value="Other">
+                    </label>
+                    
+                    
+
+                    
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Rate our site: 
+                    <select name="rating">
+                        <option selected>Amazing</option>
+                        <option>10</option>
+                        <option>9</option>
+                        <option>8</option>
+                        <option>7</option>
+                        <option>6</option>
+                        <option>5</option>
+                        <option>4</option>
+                        <option>3</option>
+                        <option>2</option>
+                        <option>1</option>
+                        <option>0</option>
+                        <option>Awful</option>
+                    </select>
+                </label>
+            </p>
+
+            <p>
+                <input name="submit" type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </p>
+        </form>
+    </body>
+</html>
