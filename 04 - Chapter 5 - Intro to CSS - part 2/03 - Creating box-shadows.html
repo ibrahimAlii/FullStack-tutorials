@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Box Shadows</title>
+        <style>
+            div {
+                width: 200px;
+                height: 200px;
+                background-color: plum;
+                box-shadow: 25px 25px 50px dimgray;
+                float: left;
+                margin-right: 120px;
+                margin-top: 40px;
+            }
+
+            #box {
+                width: 200px;
+                height: 200px;
+                background-color: plum;
+                box-shadow: -25px -25px 50px dimgray;
+            }
+
+            h2 {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div><h2>Box Shadow Bottom and Right</h2></div>
+        <div id="box"><h2>Box Shadow UP and Left</h2></div>
+    </body>
+</html>
