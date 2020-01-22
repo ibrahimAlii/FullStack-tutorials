@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Video</title>
+      
+        <script>
+            
+
+            function start () {
+                var play = document.getElementById("play");
+                play.addEventListener("click", run, false);
+                
+            }
+
+            function run() {
+                var fatiha = document.getElementById("view");
+                fatiha.play();
+            }
+
+
+            window.addEventListener("load", start, false);
+        </script>
+
+    </head>
+
+    <body>
+        
+        <video controls="true" id="view" src="https://images.all-free-download.com/footage_preview/webm/tree_126.webm" autoplay="true"  webkit-playsinline="true" >
+           
+        </video>
+
+        <form action="#">
+            <input type="button" id="play" value="Play">
+        </form>
+    </body>
+</html>

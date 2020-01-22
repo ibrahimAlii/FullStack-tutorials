@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Audio</title>
+
+        <script>
+            
+
+            function start () {
+                var play = document.getElementById("play");
+                play.addEventListener("click", run, false);
+                
+            }
+
+            function run() {
+                var fatiha = document.getElementById("fatiha");
+                fatiha.play();
+            }
+
+
+            window.addEventListener("load", start, false);
+        </script>
+
+    </head>
+
+    <body>
+        
+        <audio id="fatiha" src="https://server7.mp3quran.net/s_gmd/001.mp3" autoplay="true"  webkit-playsinline="true" >
+           
+        </audio>
+
+        <form action="#">
+            <input type="button" id="play" value="Play">
+        </form>
+    </body>
+</html>
