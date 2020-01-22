@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Roll Images</title>
+
+        <style>
+            li {display: inline; margin-right: 10px;}
+            ul {margin: 0;}
+        </style>
+
+        <script>
+            var imageElements = [
+                document.getElementById("image1"),
+                document.getElementById("image2"),
+                document.getElementById("image3"),
+                document.getElementById("image4")
+            ]
+            var images = [
+                "http://madinah.se/web/wp-content/uploads/2014/02/madinah.jpg",
+                "https://media-cdn.tripadvisor.com/media/photo-s/19/f6/b8/62/madinah-harram-masjid.jpg",
+                "https://i1.wp.com/islamicinfo.online/wp-content/uploads/2019/03/20190326_175310.jpg?resize=225%2C511&ssl=1",
+                "https://res.cloudinary.com/stay-list/image/upload/b_rgb:000000,co_rgb:ffffff,o_90,w_400,f_auto/v1549609635/area/saudi-arabia/al-madinah-province-l"
+
+            ]
+
+            function start() {
+                var button = document.getElementById("rollImages");
+                button.addEventListener("click", roll, false);
+                window.alert("test");
+                for (var i = 1; i <= 4; i++) {
+                    imageElements[i] = document.getElementById("image" + (i))
+                }
+            }
+
+
+            function roll() {
+                for (var i = 0; i < imageElements.length; i++) {
+                    var rollVall = Math.floor(Math.random() * imageElements.length + 1);
+                    imageElements[i].setAttribute("src", images[rollVall]);
+                    imageElements[i].setAttribute("alt", "Image " + rollVall)
+                }
+            }
+
+
+            window.addEventListener("load", start, false);
+        </script>
+    </head>
+
+    <body>
+        <form accept="#">
+            <input type="button" id="rollImages" value="Roll Images">
+        </form>
+
+        <ol>
+            <li><img id="image1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Blank_button.svg/200px-Blank_button.svg.png" alt="Image 1"></li>
+            <li><img id="image2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Blank_button.svg/200px-Blank_button.svg.png" alt="Image 2"></li>
+            <li><img id="image3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Blank_button.svg/200px-Blank_button.svg.png" alt="Image 3"></li>
+            <li><img id="image4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Blank_button.svg/200px-Blank_button.svg.png" alt="Image 4"></li>
+        </ol>
+    </body>
+</html>
