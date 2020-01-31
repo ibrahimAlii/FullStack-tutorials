@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DOM</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <h1 id="bigheading" class="highlighted">[bigheading] DHTML Object Model</h1>
+        <h3 id="smallheading">[smallheading] Element Functionality</h3>
+        <p id="para1">[para1] The Document Object Model (DOM) Allows for quick, dynamic access to all elements
+            in HTML5 document for manipulate with JavaScript.
+        </p>
+        <p id="para2">[para2] For more information, search for the "JavaScript and the DOM".
+        </p>
+        <p id="para3">[para3] The buttons bollow demonstrate:(list)
+        </p>
+
+        <ul id="list">
+            <li id="item1">[item1] getElementById and parentNode</li>
+            <li id="item2">[item2] insertBefore and appendChild</li>
+            <li id="item3">[item3] replaceChild and removeChild</li>
+        </ul>
+
+        <div id="nav" class="nav">
+            <form onsubmit="return false" action="#">
+                <p>
+                    <input type="text" id="gbi" value="bigheading">
+                    <input type="button" id="byIdButton" value="Get By Id">
+                </p>
+                <p>
+                    <input type="text" id="ins" >
+                    <input type="button" id="insertButton" value="Insert Before">
+                </p>
+
+                <p>
+                    <input type="text" id="append" >
+                    <input type="button" id="appendButton" value="Append Child">
+                </p>
+
+                <p>
+                    <input type="text" id="replace" >
+                    <input type="button" id="replaceButton" value="Replace Current">
+                </p>
+
+                <p>
+                    <input type="button" id="removeButton" value="Remove Current">
+                </p>
+
+                <p>
+                    <input type="button" id="parentButton" value="Get Parent">
+                </p>
+            </form>
+        </div>
+        
+    </body>
+</html>
