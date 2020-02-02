@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <meta charset="utf-8">
+    <title>Load Event</title>
+    <script>
+        var second = 0;
+
+        function startTimer() {
+            window.setInterval("updateTimer()", 1000);
+        }
+
+        function updateTimer() {
+            second++;
+            document.getElementById("seconds").innerHTML = second;
+        }
+        window.addEventListener("load", startTimer, false);
+    </script>
+
+    <body >
+        <p>
+            You have visited this page for <span id="seconds">0</span> Seconds.
+        </p>
+    </body >
+</html>
